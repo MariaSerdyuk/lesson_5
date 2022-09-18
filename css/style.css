@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Roboto&display=swap');
+@font-face {
+	font-family: "BitterPro";
+	src: url("../fonts/BitterPro-Regular.woff2") format("woff2"), url("../fonts/BitterPro-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "BitterPro";
+	src: url("../fonts/BitterPro-Bold.woff2") format("woff2"), url("../fonts/BitterPro-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+body {
+	font-family: "BitterPro", serif;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 1.5;
+	word-spacing: 5px;
+}
+/*в случае равнозначных селекторов в приоритете последний по коду*/
+div {
+	color: blueviolet;
+}
+div {
+	color: black;
+}
+h2 {
+	font-family: "Cormorant Garamond", serif;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: -2px -2px 5px cornflowerblue;
+	color: #51510d;
+}
+.liquid {
+	color:blue;
+}
+/*селектор класса .liquid перезаписывается более точным селектором тег+класс div.liquid*/
+div.liquid {
+	text-transform: capitalize;
+	text-align: right;
+	color: darkgreen;
+	background-color: antiquewhite;
+	margin: 20px;
+	padding: 30px 15px 39px;
+}
+#drinks {
+	text-align: right;
+}
+#korian {
+	font-family: "Cormorant Garamond", serif;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 500;
+	letter-spacing: 3px;
+	text-align: center;
+	color: royalblue;
+	text-shadow: 2px 2px 5px #3a3adb;
+}
+.list.content {
+	color: darkred;
+	text-align: center;
+}
+.text.second-bread p{
+	color: darkslategray;
+}
+.text-list > p {
+	color: darkorange;
+}
+.text.general + p {
+	text-transform: uppercase;
+	color: coral;
+}
+.text.instruction ~ p {
+	text-decoration: line-through black;
+	color: palevioletred;
+}
+.text.instruction * {
+	text-decoration: underline;
+	color: darkgoldenrod;
+}
+.text-list ul {
+	text-transform: lowercase;
+	text-decoration: overline;
+	color:#0b3a0b;
+}
+h1 + p{
+	font-family: "BitterPro";
+	font-weight: 700;
+	text-indent: 20px;
+	color: blue;
+}
+p ~ a {
+	color: darkseagreen;
+}
+a ~ a {
+	color: #6e0606;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+span.fact {
+	font-family: "Cormorant Garamond";
+	font-style: italic;
+	font-weight: 500;
+	letter-spacing: 5px;
+	color: crimson;
+	text-decoration: underline;
+}
+div.sub {
+	background-color: aquamarine;
+	margin: 50px 200px;
+}
+div.text.instruction {
+	padding: 20px 10px 30px 15px;
+}
+div.text-list {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+div.text.pepper {
+	background-color: #c6eb0cd4;
+	padding: 30px 100px;
+}
+div.text.second-bread {
+	background-color: aquamarine;
+	margin: 30px 60px 10px 20px;
+}
+div.text.text.general {
+	background-color: #2df0f0;
+	padding: 60px;
+}
